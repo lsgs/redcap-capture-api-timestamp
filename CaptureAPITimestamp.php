@@ -9,7 +9,7 @@ use ExternalModules\AbstractExternalModule;
 
 class CaptureAPITimestamp extends AbstractExternalModule
 {
-    public function redcap_every_page_before_render($project_id) 
+    public function redcap_every_page_before_render($project_id=null) 
     {
         if (!defined('PAGE' )) return;
         if (PAGE!='api/index.php') return;
