@@ -1,0 +1,22 @@
+{
+	"name": "Capture API Timestamp",
+	"description": "Captures token and timestap for every API call. Used to support autiting of token usage.",
+	"namespace": "MCRI\\CaptureAPITimestamp",
+	"authors": [
+		{
+			"name": "Luke Stevens",
+			"email": "luke.stevens@mcri.edu.au",
+			"institution": "Murdoch Children's Research Institute"
+		}
+	],
+    "framework-version": 14,
+    "enable-every-page-hooks-on-system-pages": true,
+	"system-settings": [ 
+        {
+            "name": "Capture API token use timestamps to this project",
+            "key": "log-project",
+            "required": true,
+            "type": "project-id"
+        }
+    ]
+}
