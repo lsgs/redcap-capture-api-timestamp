@@ -14,6 +14,7 @@ class CaptureAPITimestamp extends AbstractExternalModule
         if (!defined('PAGE' )) return;
         if (PAGE!='api/index.php') return;
         if (!isset($_POST['token'])) return;
+        if (isset($_POST['mobile_app'])) return; // ignore mobile app token use due to USERID exceptions in Records.php
         $saveToPid = $this->getSystemSetting('log-project');
         $saveData = array(
             'token' => $this->escape($_POST['token']),
