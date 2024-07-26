@@ -1,6 +1,6 @@
 {
 	"name": "Capture API Timestamp",
-	"description": "Captures token and timestap for every API call. Used to support autiting of token usage.",
+	"description": "Captures token and timestap for every (non-mobile app) API call. Used to support auditing of token usage.",
 	"namespace": "MCRI\\CaptureAPITimestamp",
 	"authors": [
 		{

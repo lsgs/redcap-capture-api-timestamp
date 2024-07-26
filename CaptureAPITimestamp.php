@@ -25,7 +25,7 @@ class CaptureAPITimestamp extends AbstractExternalModule
             'dataFormat' => 'json',
             'data' => json_encode_rc(array($saveData))
         ));
-        if (isset($result['errors']) && count($result['errors'])) {
+        if (isset($result['errors']) && !empty($result['errors'])) {
             $this->log(json_encode_rc($result));
         }
     }

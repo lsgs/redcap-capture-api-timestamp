@@ -1,8 +1,12 @@
-# Copy Data on Save
+# Capture API Timestamp
+
+Luke Stevens, Murdoch Children's Research Institute https://www.mcri.edu.au
+
+[https://github.com/lsgs/redcap-capture-api-timestamp/](https://github.com/lsgs/redcap-capture-api-timestamp/)
 
 ## Description
 
-Captures token and timestap for every API call. Used to support autiting of token usage.
+Captures token and timestap for every (non-mobile app) API call. Used to support auditing of token usage.
 
 ## Configuration
 
